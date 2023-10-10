@@ -1,0 +1,167 @@
+.aboutme {
+	padding: 110px 0 100px;
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutme {
+		padding: 90px 0 91px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme {
+		padding: 70px 0 70px;
+	}
+}
+
+.aboutme__container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 66px;
+	max-width: 1140px;
+}
+
+@media screen and (max-width: 1200px) {
+	.aboutme__container {
+		margin: 0 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__container {
+		padding-top: 60px;
+		margin: 0 14px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+.aboutme__info {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+	.aboutme__info {
+		padding-right: 49px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__info {
+		padding: 0;
+	}
+}
+
+.aboutme__name {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 18px;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 58px;
+	letter-spacing: -2px;
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutme__name {
+		padding: 0 0 16px;
+		font-size: 40px;
+		line-height: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__name {
+		padding: 40px 0 20px;
+		font-size: 30px;
+		line-height: 36.31px;
+		letter-spacing: -1px;
+	}
+}
+
+.aboutme__profession {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 26px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutme__profession {
+		font-size: 12px;
+		line-height: 18px;
+		padding: 0 0 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__profession {
+		font-size: 11px;
+		line-height: 16px;
+		padding: 0 0 20px;
+	}
+}
+
+.aboutme__biography {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 99px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	max-width: 600px;
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutme__biography {
+		font-size: 12px;
+		line-height: 18px;
+		word-spacing: 0.1px;
+		padding: 0 0 87px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__biography {
+		font-size: 11px;
+		line-height: 16px;
+		word-spacing: 0.1px;
+		padding: 0 0 40px;
+	}
+}
+
+.aboutme__link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16.94px;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: opacity .3s linear;
+}
+
+.aboutme__link:hover {
+	opacity: .7;
+}
+
+.aboutme__photo {
+	border-radius: 10px;
+	max-height: 327px;
+}
+
+@media screen and (max-width: 1100px) {
+	.aboutme__photo {
+		max-height: 307px;
+		max-width: 255px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.aboutme__photo {
+		max-height: 352px;
+		max-width: 292px;
+	}
+}

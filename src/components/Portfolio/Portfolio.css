@@ -1,0 +1,126 @@
+.portfolio {
+	margin: 0 70px;
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio {
+		margin: 0 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio {
+		margin: 0 14px;
+	}
+}
+
+.portfolio__title {
+	margin: 0;
+	padding: 0 0 50px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+	color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio__title {
+		padding: 0 0 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio__title {
+		font-size: 14px;
+		padding: 0 0 40px;
+	}
+}
+
+.portfolio__navigate {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-bottom: 125px;
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio__navigate {
+		padding-bottom: 90px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio__navigate {
+		padding-bottom: 70px;
+	}
+}
+
+.portfolio__list {
+	max-width: 1140px;
+	margin: 0;
+	padding: 0;
+}
+
+.portfolio__list-item {
+	list-style: none;
+	padding-bottom: 19px;
+	border-bottom: 1px solid #424242;
+	margin-bottom: 20px;
+}
+
+.portfolio__list-item:last-child {
+	padding: 0;
+	border: none;
+	margin: 0;
+}
+
+.portfolio__link {
+	display: flex;
+	justify-content: space-between;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing: -1.2px;
+	margin: 0;
+	padding: 0;
+	transition: opacity .3s linear;
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio__link {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio__link {
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.7px;
+	}
+}
+
+.portfolio__link:hover {
+	opacity: .7;
+}
+
+.portfolio__button-link {
+	background-image: url(../../images/link_icon.svg);
+	width: 29px;
+	background-color: transparent;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio__button-link {
+		background-image: url(../../images/small_arrow.svg);
+		background-repeat: no-repeat;
+		width: 18px;
+		height: 28px;
+	}
+}

@@ -1,0 +1,17 @@
+.page {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --dark-color: #202020;
+  --secondary-color: #073042;
+  --main-font-color: #FFFFFF;
+  --secondary-font-color: #8B8B8B;
+}

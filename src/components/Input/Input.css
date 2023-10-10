@@ -1,0 +1,132 @@
+.profile__label {
+display: flex;
+justify-content: space-between;
+width: 100%;
+border-bottom: 1px solid #424242;
+}
+
+.profile__label:last-of-type {
+	border: none;
+}
+
+.profile__name {
+	width: 40px;
+	font-size: 11px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--main-font-color);
+}
+
+.profile__input {
+	width: 90%;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--main-font-color);
+	padding: 0 0 16px;
+	}
+
+.profile__input:focus {
+	outline: 1px solid #4285F4;
+}
+
+.profile__error_active {
+	visibility: visible;
+}
+
+.profile__input_invalid {
+	color: #EE3465;
+}
+
+.profile__error {
+	visibility: hidden;
+	display: block;
+  height: 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  color: #EE3465;
+	padding-bottom: 160px;
+	max-width: 410px;
+}
+
+.profile__error:first-of-type {
+	padding-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+	.profile__error {
+		padding-bottom: 329px;
+	}
+}
+
+.form__label {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+padding: 0;
+}
+
+.form__name {
+color: #8B8B8B;
+font-weight: 400;
+font-size: 10px;
+line-height: 12.1px;
+}
+
+.form__input {
+	max-width: 396px;
+	box-sizing: border-box;
+	background-color: #2F2F2F;
+	border: none;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15.73px;
+	color: #FFFFFF;
+	height: 46px;
+	border-radius: 8px;
+	padding: 0 15px 0;
+}
+
+.form__input:focus {
+	outline: 0.2px solid #4285F4;
+}
+
+.login__input_invalid {
+	color: #EE3465;
+}
+
+@media screen and (max-width: 500px) {
+	.form__input {
+		max-width: 260px;
+	}
+}
+
+::placeholder {
+	color: #FFFFFF;
+}
+
+.form__error {
+	height: 12px;
+	visibility: hidden;
+	display: block;
+	padding: 0 0 10px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  color: #EE3465;
+	max-width: 410px;
+}
+
+@media screen and (max-width: 500px) {
+	.form__error {
+		max-width: 260px;
+	}
+}
+
+.form__error_active {
+	visibility: visible;
+}

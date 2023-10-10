@@ -1,0 +1,124 @@
+.form {
+	min-width: 410px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+	.form  {
+		min-width: 260px;
+	}
+}
+
+.form__button {
+	background-color: transparent;
+	border: none;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15.73px;
+	padding: 8px 0 16px;
+	cursor: pointer;
+	transition: opacity .3s linear;
+}
+
+@media screen and (max-width: 1100px) {
+	.form__button {
+		padding: 0 0 16px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.form__button {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 14.52px;
+	}
+}
+
+.form__button:hover {
+opacity: .7;
+}
+
+
+.form__error {
+	visibility: hidden;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 13.31px;
+	text-align: center;
+	color: #FF004C;
+}
+
+.form__login-error {
+	visibility: hidden;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 13.31px;
+	text-align: left;
+	color: #FF004C;
+}
+
+.form__registr-button {
+background-color: #4285F4;
+color: #FFFFFF;
+font-weight: 500;
+font-size: 14px;
+line-height: 16.94px;
+border: none;
+max-width: 396px;
+padding: 13px 0 15px;
+border-radius: 3px;
+margin-top: 53px;
+transition: opacity .3s linear
+}
+
+.form__registr-button:hover {
+	opacity: .8;
+}
+
+@media screen and (max-width: 500px) {
+	.form__registr-button {
+		margin-top: 140px;
+		font-size: 12px;
+		line-height: 14.52px;
+	}
+}
+
+.form__login-button {
+	background-color: #4285F4;
+color: #FFFFFF;
+font-weight: 500;
+font-size: 14px;
+line-height: 16.94px;
+border: none;
+max-width: 396px;
+padding: 13px 0 15px;
+border-radius: 3px;
+margin-top: 143px;
+transition: opacity .3s linear
+}
+
+.form__login-button:hover {
+	opacity: .8;
+}
+
+@media screen and (max-width: 500px) {
+	.form__login-button {
+		margin-top: 231px;
+		font-size: 12px;
+		line-height: 14.52px;
+	}
+}
+
+.form__login-button_disabled {
+	background-color: #F8F8F8;
+  color: #C2C2C2;
+  pointer-events: none;
+}
+
+.form__registr-button_disabled {
+	background-color: #F8F8F8;
+  color: #C2C2C2;
+  pointer-events: none;
+}
