@@ -2,7 +2,7 @@
 
 Адрес репозитория: https://github.com/Andrey032/movies-explorer-frontend
 
-Ссылка на пул-реквест: 
+Ссылка на пул-реквест: https://github.com/Andrey032/movies-explorer-frontend/pull/2
 
 ## Ссылки на макет в Figma 
 
