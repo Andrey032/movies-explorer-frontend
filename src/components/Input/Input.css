@@ -109,7 +109,7 @@ line-height: 12.1px;
 	color: #FFFFFF;
 }
 
-.form__error {
+.form__error-input {
 	height: 12px;
 	visibility: hidden;
 	display: block;
@@ -122,11 +122,11 @@ line-height: 12.1px;
 }
 
 @media screen and (max-width: 500px) {
-	.form__error {
+	.form__error-input {
 		max-width: 260px;
 	}
 }
 
-.form__error_active {
+.form__error-input_active {
 	visibility: visible;
 }

@@ -21,6 +21,7 @@
 	grid-template-columns: repeat(auto-fit, 270px);
 	column-gap: 20px;
 	row-gap: 32px;
+	justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -37,6 +38,11 @@
 		grid-template-columns: repeat(auto-fit, 300px);
 		row-gap: 20px;
 	}
+}
+
+.gallery__serch-error {
+	text-align: center;
+	color: var(--secondary-font-color);
 }
 
 .movies__button-more {

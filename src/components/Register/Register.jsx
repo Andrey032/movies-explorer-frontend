@@ -1,19 +1,17 @@
 import "./Register.css";
 import Form from "../Form/Form";
 import Input from "../Input/Input";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useFormValidation from "../../hooks/useFormValidation";
 
-function Register({ name, setLoggedIn }) {
+function Register({ name, onRegister, setIsError }) {
 	const { values, errors, isInputValid, isValid, handleChange } =
 		useFormValidation();
-		const navigate = useNavigate();
 
-function onLogin(evt) {
-	evt.preventDefault()
-	navigate('/signin')
-	setLoggedIn(true)
-}
+	function onSubmit(evt) {
+		evt.preventDefault();
+		onRegister(values.user, values.email, values.password);
+	}
 
 	return (
 		<section className="register">
@@ -21,7 +19,12 @@ function onLogin(evt) {
 				<Link to={"/"} className="register__logo-link"></Link>
 			</div>
 			<h2 className="register__title">Добро пожаловать!</h2>
-			<Form name={name} isValid={isValid} onSubmit={onLogin}>
+			<Form
+				name={name}
+				isValid={isValid}
+				onSubmit={onSubmit}
+				setIsError={setIsError}
+			>
 				<Input
 					name="user"
 					type="text"
