@@ -23,7 +23,7 @@ function onSubmit(evt) {
 					name="email"
 					type="email"
 					title="E-mail"
-					placeholder="pochta@yandex.ru"
+					placeholder="Введите вашу почту"
 					value={values.email}
 					isInputValid={isInputValid.email}
 					error={errors.email}
@@ -43,7 +43,9 @@ function onSubmit(evt) {
 					onChange={(evt) => {
 						handleChange(evt)
 						setIsError(false)
-					}} />
+					}} 
+					placeholder="Введите ваш пароль"
+					/>
 			</Form>
 			<p className="login__text">
 				Ещё не зарегистрированы?

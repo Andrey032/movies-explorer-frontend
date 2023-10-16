@@ -3,6 +3,7 @@ import Form from "../Form/Form";
 import Input from "../Input/Input";
 import { Link } from "react-router-dom";
 import useFormValidation from "../../hooks/useFormValidation";
+import { EmailRegex } from '../../utils/constants';
 
 function Register({ name, onRegister, setIsError }) {
 	const { values, errors, isInputValid, isValid, handleChange } =
@@ -30,21 +31,28 @@ function Register({ name, onRegister, setIsError }) {
 					type="text"
 					title="Имя"
 					minLength="2"
-					placeholder="Виталий"
+					placeholder="Введите ваше имя"
 					value={values.user}
 					isInputValid={isInputValid.user}
 					error={errors.user}
-					onChange={handleChange}
+					onChange={(evt) => {
+						handleChange(evt)
+						setIsError(false)
+					}}
 				/>
 				<Input
 					name="email"
 					type="email"
 					title="E-mail"
-					placeholder="pochta@yandex.ru"
+					placeholder="Введите вашу почту"
 					value={values.email}
 					isInputValid={isInputValid.email}
 					error={errors.email}
-					onChange={handleChange}
+					onChange={(evt) => {
+						handleChange(evt)
+						setIsError(false)
+					}}
+					pattern={EmailRegex}
 				/>
 				<Input
 					name="password"
@@ -54,7 +62,11 @@ function Register({ name, onRegister, setIsError }) {
 					value={values.password}
 					isInputValid={isInputValid.password}
 					error={errors.password}
-					onChange={handleChange}
+					placeholder="Введите ваш пароль"
+					onChange={(evt) => {
+						handleChange(evt)
+						setIsError(false)
+					}}
 				/>
 			</Form>
 			<p className="register__text">
