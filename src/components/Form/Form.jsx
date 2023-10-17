@@ -112,7 +112,7 @@ function Form({
 					<button
 						type="submit"
 						className={`form__button_type_profile ${
-							(values.username === currentUser.name &&
+							(values.user === currentUser.name &&
 								values.email === currentUser.email) ||
 							!isValid ||
 							isError
