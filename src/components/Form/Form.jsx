@@ -53,7 +53,8 @@ function Form({
 							isValid && !isError ? "" : "form__login-button_disabled"
 						}`}
 						disabled={!isValid || isSend || isError}
-					>{isSend ? <Preloader name='button' /> : "Войти"}
+					>
+						{isSend ? <Preloader name="button" /> : "Войти"}
 					</button>
 				</>
 			) : name === "signup" ? (
@@ -70,29 +71,67 @@ function Form({
 						className={`form__registr-button ${
 							isValid && !isError ? "" : "form__registr-button_disabled"
 						}`}
+						disabled={!isValid || isSend || isError}
 					>
-						{isSend ? <Preloader name='button' /> : "Зарегистрироваться"}
+						{isSend ? <Preloader name="button" /> : "Зарегистрироваться"}
+					</button>
+				</>
+			) : !isEdit ? (
+				<>
+					<span
+						className={`form__error ${
+							isError
+								? "form__error_active"
+								: isSuccess && "form__error-success_active"
+						}`}
+					>
+						{isError ? "При обновлении профиля произошла ошибка." : "Успешно"}
+					</span>
+					<button
+						type="button"
+						className="form__button"
+						onClick={() => {
+							setIsEdit(true);
+							setSuccess(false);
+						}}
+					>
+						{"Редактировать"}
 					</button>
 				</>
 			) : (
-				!isEdit ?
-            <>
-              <span className={`form__error ${isError ? 'form__error_active' : isSuccess && 'form__error-success_active'}`}>{isError ? 'При обновлении профиля произошла ошибка.' : 'Успешно'}</span>
-              <button
+				<>
+					<span
+						className={`form__error ${
+							isError
+								? "form__error_active"
+								: isSuccess && "form__error-success_active"
+						}`}
+					>
+						{isError ? "При обновлении профиля произошла ошибка." : "Успешно"}
+					</span>
+					<button
+						type="submit"
+						className={`form__button_type_profile ${
+							(values.username === currentUser.name &&
+								values.email === currentUser.email) ||
+							!isValid ||
+							isError
+								? "form__login-button_disabled"
+								: ""
+						}`}
+						disabled={!isValid || isSend || isError}
+					>
+						{isSend ? <Preloader name="button" /> : "Сохранить"}
+					</button>
+					<button
                 type="button"
-                className="form__button"
+                className='form__button'
                 onClick={() => {
-                  setIsEdit(true)
+                  setIsEdit(false)
                   setSuccess(false)
+                  setIsError(false)
                 }}
-              >{'Редактировать'}</button>
-            </> :
-            <>
-              <span className={`form__error ${isError ? 'form__error_active' : isSuccess && 'form__error-success_active'}`}>{isError ? 'При обновлении профиля произошла ошибка.' : 'Успешно'}</span>
-              <button
-                type="submit"
-                className={`form__button_type_profile ${(values.username === currentUser.name && values.email === currentUser.email) || !isValid || isError ? 'form__login-button_disabled' : 'form__button_type_profile'}`}
-              >{isSend ? <Preloader name='button' /> : 'Сохранить'}</button>
+              >{'Отменить редактирование'}</button>
 				</>
 			)}
 		</form>

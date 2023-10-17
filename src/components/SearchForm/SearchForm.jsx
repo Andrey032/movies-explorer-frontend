@@ -59,7 +59,7 @@ function SearchForm({
 								handleChange(evt);
 								setIsError(false);
 							}}
-							disabled={savedMovie ? savedMovie.length === 0 && true : false}
+							disabled={savedMovie ? (savedMovie.length === 0 && true) : false}
 						/>
 						<button className="search__button" type="submit"></button>
 					</fieldset>

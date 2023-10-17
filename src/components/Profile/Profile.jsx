@@ -6,7 +6,7 @@ import useFormValidation from "../../hooks/useFormValidation";
 import { useContext } from "react";
 import CurrentUserContext from "../../contexts/CurrentUserContext";
 import { useEffect } from "react";
-import { EmailRegex } from "../../utils/constants";
+import { EMAILREGEX } from "../../utils/constants";
 
 function Profile({
 	name,
@@ -21,7 +21,6 @@ function Profile({
 	const { values, errors, isInputValid, isValid, handleChange, reset } =
 		useFormValidation();
 	const currentUser = useContext(CurrentUserContext);
-	console.log(currentUser);
 
 	function onSubmit(evt) {
 		evt.preventDefault();
@@ -52,7 +51,7 @@ function Profile({
 					title="Имя"
 					selectname={name}
 					minLength="3"
-					placeholder="Виталий"
+					placeholder="Введите ваше имя"
 					value={values.user}
 					isInputValid={isInputValid.user}
 					error={errors.user}
@@ -64,16 +63,16 @@ function Profile({
 					name="email"
 					title="E-mail"
 					selectname={name}
-					placeholder="pochta@yandex.ru"
+					placeholder="Введите вашу почту"
 					value={values.email}
 					isInputValid={isInputValid.email}
 					error={errors.email}
 					onChange={handleChange}
-					pattern={EmailRegex}
+					pattern={EMAILREGEX}
 					isEdit={isEdit}
 				/>
 			</Form>
-			<Link to={"/"} onClick={logOut} className={`profile__link ${isEdit ? 'profile__link_disable' : ""}`}>
+			<Link to={"/"} onClick={logOut} className='profile__link'>
 				Выйти из аккаунта
 			</Link>
 		</section>

@@ -13,16 +13,16 @@ import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
 import ProtectedPage from "./ProtectedPage/ProtectedPage";
 
 function App() {
+	const navigate = useNavigate();
 	const [loggedIn, setLoggedIn] = useState(false);
 	const [isSend, setIsSend] = useState(false);
 	const [currentUser, setCurrentUser] = useState({});
 	const [savedMovies, setSavedMovies] = useState([]);
 	const [isError, setIsError] = useState(false);
-	const [isCheckToken, setIsCheckToken] = useState(false);
+	const [isCheckToken, setIsCheckToken] = useState(true);
 	const [isSuccess, setIsSuccess] = useState(false);
 	const [isEdit, setIsEdit] = useState(false);
 
-	const navigate = useNavigate();
 
 	const setSuccess = useCallback(() => {
 		setIsSuccess(false);

@@ -69,7 +69,7 @@ const isSend = useContext(SendContext);
 							value={value || ""}
 							onChange={onChange}
 							pattern={pattern}
-							disabled={isSend || isEdit}
+							disabled={isSend || !isEdit}
 						/>
 					</label>
 					<span className={`profile__error ${

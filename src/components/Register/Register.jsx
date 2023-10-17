@@ -3,7 +3,7 @@ import Form from "../Form/Form";
 import Input from "../Input/Input";
 import { Link } from "react-router-dom";
 import useFormValidation from "../../hooks/useFormValidation";
-import { EmailRegex } from '../../utils/constants';
+import { EMAILREGEX } from '../../utils/constants';
 
 function Register({ name, onRegister, setIsError }) {
 	const { values, errors, isInputValid, isValid, handleChange } =
@@ -52,7 +52,7 @@ function Register({ name, onRegister, setIsError }) {
 						handleChange(evt)
 						setIsError(false)
 					}}
-					pattern={EmailRegex}
+					pattern={EMAILREGEX}
 				/>
 				<Input
 					name="password"

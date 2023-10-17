@@ -1,24 +1,24 @@
-const EmailRegex = "^\\S+@\\S+\\.\\S+$"
-const MaxScreen = 1280
-const MediumScreen = 1024
-const SmallScreen = 650
-const InitMoreMaxScreen = 16
-const InitLessMaxScreen = 12
-const InitMediumScreen = 8
-const InitSmallScreen = 5
-const StepMaxScreen = 4
-const StepMediumScreen = 3
-const StepSmallScreen = 2
+const EMAILREGEX = "^\\S+@\\S+\\.\\S+$"
+const MAXSCREEN = 1280
+const MEDIUMSCREEN = 1024
+const SMALLSCREEN = 650
+const INITMOREMAXSCREEN = 16
+const INITLESSMAXSCREEN = 12
+const INITMEDIUMSCREEN = 8
+const INITSMALLSCREEN = 5
+const STEPMAXSCREEN = 4
+const STEPMEDIUMSCREEN = 3
+const STEPSMALLSCREEN = 2
 export {
-  EmailRegex,
-  MaxScreen,
-  MediumScreen,
-  SmallScreen,
-  InitMoreMaxScreen,
-  InitLessMaxScreen,
-  InitMediumScreen,
-  InitSmallScreen,
-  StepMaxScreen,
-  StepMediumScreen,
-  StepSmallScreen
+  EMAILREGEX,
+  MAXSCREEN,
+  MEDIUMSCREEN,
+  SMALLSCREEN,
+  INITMOREMAXSCREEN,
+  INITLESSMAXSCREEN,
+  INITMEDIUMSCREEN,
+  INITSMALLSCREEN,
+  STEPMAXSCREEN,
+  STEPMEDIUMSCREEN,
+  STEPSMALLSCREEN
 }
