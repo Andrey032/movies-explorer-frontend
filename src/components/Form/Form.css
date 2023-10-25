@@ -50,6 +50,15 @@ opacity: .7;
 	color: #FF004C;
 }
 
+.form__error_active {
+	visibility: visible;
+}
+
+.form__error-success_active {
+	visibility: visible;
+	color: var(--secondary-font-color);
+}
+
 .form__login-error {
 	visibility: hidden;
 	font-weight: 400;
@@ -59,7 +68,15 @@ opacity: .7;
 	color: #FF004C;
 }
 
+.form__login-error_active {
+	visibility: visible;
+}
+
 .form__registr-button {
+display: flex;
+justify-content: center;
+align-items: center;
+max-height: 45px;
 background-color: #4285F4;
 color: #FFFFFF;
 font-weight: 500;
@@ -70,6 +87,26 @@ max-width: 396px;
 padding: 13px 0 15px;
 border-radius: 3px;
 margin-top: 53px;
+cursor: pointer;
+transition: opacity .3s linear
+}
+
+.form__button_type_profile {
+display: flex;
+justify-content: center;
+align-items: center;
+max-height: 45px;
+background-color: #4285F4;
+color: #FFFFFF;
+font-weight: 500;
+font-size: 14px;
+line-height: 16.94px;
+border: none;
+max-width: 396px;
+padding: 13px 0 15px;
+border-radius: 3px;
+margin-top: 20px;
+cursor: pointer;
 transition: opacity .3s linear
 }
 
@@ -86,17 +123,22 @@ transition: opacity .3s linear
 }
 
 .form__login-button {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	max-height: 45px;
 	background-color: #4285F4;
-color: #FFFFFF;
-font-weight: 500;
-font-size: 14px;
-line-height: 16.94px;
-border: none;
-max-width: 396px;
-padding: 13px 0 15px;
-border-radius: 3px;
-margin-top: 143px;
-transition: opacity .3s linear
+	color: #FFFFFF;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16.94px;
+	border: none;
+	max-width: 396px;
+	padding: 13px 0 15px;
+	border-radius: 3px;
+	margin-top: 143px;
+	cursor: pointer;
+	transition: opacity .3s linear
 }
 
 .form__login-button:hover {

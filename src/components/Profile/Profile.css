@@ -48,6 +48,10 @@
 		transition: opacity .3s linear;
 	}
 
+	.profile__link_disable {
+		display: none;
+	}
+
 	.profile__link:hover {
 		opacity: .7;
 	}

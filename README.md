@@ -1,6 +1,8 @@
-# Дипломный проект: Movies Explorer v1.0
+# Дипломный проект: Movies Explorer v2.0 level-3
 
 Адрес репозитория: https://github.com/Andrey032/movies-explorer-frontend
+
+Ссылка на пул-реквест: https://github.com/Andrey032/movies-explorer-frontend/pull/2
 
 ## Ссылки на макет в Figma 
 
